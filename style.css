@@ -1,0 +1,322 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;1,300;1,400&family=Quicksand:wght@300;400;600;700&display=swap'); 
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'poppins',serif;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    padding: 0 20px;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0 15px 40px -20px rgb(40 44 63 / 15%);
+}
+ .navbar{
+    max-width: 1200px;
+    min-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    height: 80px;
+    justify-content:space-between;
+}
+.navbar .left-part{
+    display: flex;
+    align-items: center;
+}
+.navbar .left-part .image{
+    display: block;
+    margin: 16px;
+}
+.left-part .image:hover{
+    transform: scale(1.1);
+}
+.left-part .image-name{
+    font-size: 20px;
+    font-weight: 700;
+    color: darkgreen;
+}
+.navbar .right-part{
+    position: relative; 
+}
+.right-part .navbar_option{
+    display: flex;
+}
+.navbar_option li{
+    list-style: none;
+    margin-right: 56px;
+    font-size: 15px;
+    padding-top: 25px;
+}
+.right-part .nav-item{
+    display: flex;
+    align-items: center;
+    padding-left: 18px;
+    height: 80px;
+    cursor: pointer;
+    
+}
+.right-part li:hover{
+    border: none;
+    background-color: lightgray;
+    padding: 10px;
+    margin-top: 15px;
+    width: 100;
+    box-sizing: border-box;
+    border-radius: 33px
+}
+
+.navbar_option li .nav-items a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    
+}
+span.title{
+    padding-left: 11px;
+}
+.container{
+    max-width: 1200px;
+    position: relative;
+    margin: 0 30px;
+    top: 200px;
+    left: 60px;
+    margin-left: 30px;
+    right: 20px;
+    padding-top: 10px;
+    padding-left: 50px;
+
+}
+.container .content{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 80px;
+    padding-left:50px;
+    
+}
+.content .heading .banner-subtitle{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    color: darkgrey;
+    margin-left: 170px;
+}
+.container .heading h1{
+    font-weight: 800;
+    font-size: 60px;
+    text-transform: capitalize;
+    line-height: 1.15;
+    margin-bottom: 25px;
+    animation: everydoor 5s ease-in infinite; 
+}
+@keyframes everydoor{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.content .heading h1 span{
+    color: mediumseagreen;
+}
+.heading .banner-title-text{
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-left: 35px !important;
+    margin-bottom: 40px;
+    max-width: 450px;
+    color:lightslategray;
+}
+
+    .learn-more-btn {
+        padding: 5px 29px;
+        margin-left: 180px;
+        background-color: black;
+        border-radius: 10px;
+        color: white;
+        font-size: 18px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: 0.7s;
+        text-decoration: none;
+        border: 2px solid black;
+        box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
+}
+.container .about-section{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    padding-left:50px;
+    margin-top: 50px;
+    
+
+}
+.about-section .about-us .about-text{
+  width: 70%;
+  margin-left: 200px;
+  background-color:rgb(151, 218, 180);
+  color:black;
+  padding: 30px;
+  border-radius: 15px;
+}
+.about-text h2{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    padding-left: 170px;
+    
+}
+.about-text p{
+    font-size: 18px;
+    font-weight: 400;
+    color: darkslategrey;
+}
+.service-section .our-services{
+    display: grid;
+    grid-template-columns: repeat(3, 35%);
+    margin-top: 5px;
+    margin-bottom: 85px;
+    padding-left: 20px;
+}
+.service-section .service-heading{
+    
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.service-heading h1{
+    font-size: 75px;
+    font-weight: 600;
+    
+}
+.our-services .list-item{
+    padding: 16px;
+}
+
+.item-content .top-img{
+    background-color: #eef0f5;
+    width: 350px;
+    height: 300px;
+    padding-left: 25px;
+}
+.item-content{
+    position: relative;
+}
+.place-name-div{
+    margin-top: 14px;
+}
+.place-name-div .item-name{
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid lightgray;
+}
+ .ingredients{ 
+    font-size: 15px;
+    margin-top: 4px;
+    font-weight: 500;
+} 
+.our-services .list-item:hover{
+    background-color: black;
+    color: white !important;
+    border: 1px solid lightgrey;
+    box-shadow: 0px 4px 7px 0px rgba(218 220 230 / 60%);
+}
+
+.contact{
+    max-width: 100%;
+    position: relative;
+    top: 200px;
+    background-color: black;
+    padding-top: 10px; 
+}
+.contact .contact-section{
+    max-width: 1200px;
+    color: white;
+    padding-left: 140px;
+    padding-top: 80px;
+
+}
+.contact-heading{
+    display: flex;
+    justify-content: space-between;
+
+}
+.contact-section h1{
+    padding-left: 450px;
+    font-weight: 800;
+    /* margin-bottom: 30px; */
+}
+input[type="text"], input[type="email"]{
+    width: 100%;
+    background-color:transparent;
+    height: 33px;
+    border: 1px solid white;
+    border-radius: 7px;
+    padding: 5px 10px;
+    margin: 6px 0px;
+    font-size: 16px;
+    color: lightgrey;
+}
+input[type="text"]:focus, input[type="email"]:focus{
+    outline: none;
+}
+input[type="text"]::placeholder, input[type="email"]::placeholder{
+    color:white;
+
+}
+.form .button{
+    margin: 20px 0;
+    padding: 10px;
+    width: 140px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer; 
+}
+@media screen and (min-width: 1450px) and (max-width: 1700px){
+     .navbar{
+        min-width: 991px;
+        margin: 0px 21px;
+    }
+    .right-part .items li{
+        margin-right: 27px;
+    }
+    .container{
+        min-width: 800px;
+        padding-left:0;
+        left: 0;
+
+        
+    }
+}
+@media screen and (max-width :1451){
+     .navbar{
+        min-width: 1000px;
+        justify-content: center;
+    }
+    .right-part .items li{
+        margin-right: 29px;
+    }
+    .container .content{
+    grid-template-columns:100%;
+    }
+}
